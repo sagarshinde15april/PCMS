@@ -1,0 +1,156 @@
+<html>
+
+    <head>
+	
+        <style type="text/css">
+
+            body {
+				background-color	: yellow;
+			}
+	
+			.line{
+				width				: 100%;
+				margin				: 4px 0px;
+			}
+           
+		   .smallTextbox{
+				width				: 150px;
+				height				: 34px;
+				margin-left			: 20px;
+		   }
+		   
+		   .mediumTextbox{
+				width				: 320px;
+				height				: 34px;
+				margin-left			: 20px;
+		   }
+		   
+		   .multilineTextbox{
+				width				: 320px;
+				height				: 70px;
+				margin-left			: 20px;
+			}
+			
+			.push-button{
+				border-radius		: 10px; 
+				background-color	: blue; 
+				color				: white; 
+				font-size			: 16px; 
+				padding				: 10px 20px; 
+			    width				: 10%;
+			}
+			
+		   .lblClass{
+				width				: 10%;
+				margin-left			: 250px;
+		   }
+		   
+		   .lblTitle{
+				margin				: auto;
+				font-family			: sans-serif;
+				font-weight			: bold;
+				font-size			: 30px;
+				color				: blue;
+		   }
+		   
+		   .center{
+				text-align			: center;
+		   }
+		   
+		   .inputDiv{
+		   		padding				: 0px 0px 0px 20px;
+		   }
+		   
+		   .left-float {
+		   		float				: left;
+		   }
+		   
+		   .left-margin-20-percent {
+		   		margin-left			: 20%;
+		   }
+		   
+		   .left-margin-10-percent {
+		   		margin-left			: 10%;
+		   }
+		   
+        </style>
+		
+    </head>
+	
+    <body>
+	
+        <div id="container">
+            <form>
+				
+                <div class="line left-float center">
+					<label class="lblTitle">Add Customer</label>
+				</div>
+                
+				<div class="line left-float">
+					<label class="lblClass left-float">
+						Name* 
+					</label> 
+					<input type="text" id="firstname" class="smallTextbox left-float"/> 
+					<input type="text" id="middlename" class="smallTextbox left-float" /> 
+					<input type="text" id="lastname" class="smallTextbox left-float" />
+				</div>
+				
+				<div class="line left-float">
+					<label class="lblClass left-float">
+						Address*
+					</label>
+					<textarea class="multilineTextbox left-float" id="address"></textarea>
+				</div>
+				  
+                <div class="line left-float">
+					<label class="lblClass left-float">
+						Pin Code*
+					</label>
+					<input type="text" id="pincode" class="mediumTextbox left-float"/>
+                </div>
+				
+				<div class="line left-float">
+					<label class="lblClass left-float">
+						Email*
+					</label>
+					<input type="text" id="email" class="mediumTextbox left-float"/>
+				</div>
+                
+                <div class="line left-float">
+					<label class="lblClass left-float">
+						Telephone No*
+					</label>
+					<input type="text" id="telephone" class="mediumTextbox left-float"/>
+				</div>
+                
+                <div class="line left-float">
+					<label class="lblClass left-float">
+						Mobile No*
+					</label>
+					<input type="text" id="mobile" class="mediumTextbox left-float"/>
+				</div>
+                
+				<div class="line left-float">
+					<label class="lblClass left-float">
+						Gender* 
+					</label> 
+					<div class="inputDiv left-float"> 
+						<input type="radio" name="selector" value="Male" id="gender" class="left-float"/>
+						<span class="left-float">Male</span>
+				    
+						<input type="radio" name="selector" value="Female" id="gender" class="left-float"/>
+						<span class="left-float">Female</span>
+					</div>
+				</div>
+				
+                <div class="line left-float">
+					<input type="submit" value="Add" class="push-button left-float left-margin-20-percent" />
+					<input type="button" value="Cancel" class="push-button left-float left-margin-10-percent"/>
+                </div>
+				
+            </form>
+        </div>
+		
+    </body>
+	
+</html>
